@@ -8,3 +8,8 @@ class CreateReviews < ActiveRecord::Migration[6.1]
     end
   end
 end
+
+class Review < ActiveRecord::Base
+  belongs_to :game
+  belongs_to :user
+end
